@@ -1,39 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>eu.lindenbaum.conferencing</groupId>
   <artifactId>javadoc-cleaner</artifactId>
   <packaging>pom</packaging>
-  <name>Javadoc Cleaner</name>
   <version>1.0.0-SNAPSHOT</version>
 
-  <repositories>
-    <repository>
-      <id>jmockit-svn</id>
-      <url>http://jmockit.googlecode.com/svn/maven-repo</url>
-      <releases>
-        <checksumPolicy>ignore</checksumPolicy>
-      </releases>
-    </repository>
-  </repositories>
+  <name>Javadoc Cleaner</name>
+  <description>Deletes stupid auto-generated Javadoc comments with tools like JAutodoc.</description>
 
   <dependencies>
-    <dependency>
-      <groupId>mockit</groupId>
-      <artifactId>jmockit</artifactId>
-      <version>0.999.10</version>
-      <scope>test</scope>
-    </dependency>
-
     <dependency>
       <groupId>org.codehaus.gmaven.runtime</groupId>
       <artifactId>gmaven-runtime-1.7</artifactId>
       <version>1.3</version>
     </dependency>
-
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -75,6 +58,5 @@
       </resource>
     </resources>
   </build>
-
-
+  
 </project>
